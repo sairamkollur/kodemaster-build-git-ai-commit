@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 import { Command } from 'commander';
-import chalk from 'chalk';
 
 const program = new Command();
 
@@ -13,7 +12,7 @@ program
   .command('hello')
   .description('Test command')
   .action(() => {
-    console.log(chalk.green('Hello world'));
+    console.log('Hello world'); // ✅ plain text (no chalk)
   });
 
 program.parse(process.argv);
