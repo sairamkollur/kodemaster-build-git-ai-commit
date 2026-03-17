@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env bun
 import { Command } from 'commander';
 import chalk from 'chalk';
 
@@ -7,9 +7,7 @@ const program = new Command();
 program
   .name('git-ai-commit')
   .description('AI-powered commit message generator')
-  .version('1.0.0'); // The server runs --version and expects this!
-
-program
+  .version('1.0.0')
   .command('hello')
   .description('Test command')
   .action(() => {
