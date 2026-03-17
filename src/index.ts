@@ -1,4 +1,5 @@
-#!/usr/bin/env bun
+#!/usr/bin/env node
+
 import { Command } from 'commander';
 import chalk from 'chalk';
 
@@ -9,12 +10,10 @@ program
   .description('AI-powered commit message generator')
   .version('1.0.0');
 
-// ACTIVATE THIS:
+// This action triggers when no sub-commands are provided
 program
-  .command('hello')
-  .description('Test command')
   .action(() => {
-    console.log(chalk.green('Hello from git-ai-commit!'));
+    console.log(chalk.cyan('✨ Analyzing your changes...'));
   });
 
 program.parse(process.argv);
