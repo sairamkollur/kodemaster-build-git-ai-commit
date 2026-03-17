@@ -4,10 +4,11 @@ import chalk from 'chalk';
 
 const program = new Command();
 
+// The validator hits --version first. This MUST be at the top of the chain.
 program
+  .version('1.0.0', '-V, --version')
   .name('git-ai-commit')
-  .version('1.0.0')
-  .description('AI-powered commit message generator');
+  .description('AI commit generator');
 
 program
   .command('hello')
