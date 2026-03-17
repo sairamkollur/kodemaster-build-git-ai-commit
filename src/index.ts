@@ -5,9 +5,9 @@ import chalk from 'chalk';
 const program = new Command();
 
 program
-  .name('git-ai-commit')
   .version('1.0.0')
-  .description('AI commit generator');
+  .name('git-ai-commit')
+  .description('AI-powered commit message generator');
 
 program
   .command('hello')
