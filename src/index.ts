@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env bun
 import { Command } from 'commander';
 import chalk from 'chalk';
 
@@ -11,6 +11,7 @@ program
 
 program
   .command('hello')
+  .description('Test command')
   .action(() => {
     console.log(chalk.green('Hello world'));
   });
