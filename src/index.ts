@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+// Step 04: Unified Command Chain
 import { Command } from 'commander';
 import chalk from 'chalk';
 
