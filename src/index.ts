@@ -7,7 +7,7 @@ const program = new Command();
 program
   .name('git-ai-commit')
   .description('AI-powered commit message generator')
-  .version('1.0.0') // This must be attached to the same chain!
+  .version('1.0.0') // This is what the test is failing on!
   .command('hello')
   .description('Test command')
   .action(() => {
