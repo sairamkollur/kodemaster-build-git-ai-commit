@@ -2,7 +2,9 @@
   "name": "git-ai-commit",
   "version": "1.0.0",
   "type": "module",
-  "bin": "src/index.ts",
+  "bin": {
+    "git-ai-commit": "src/index.ts"
+  },
   "scripts": {
     "dev": "tsx src/index.ts"
   },
