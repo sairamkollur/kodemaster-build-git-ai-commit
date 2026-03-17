@@ -1,11 +1,11 @@
-#!/usr/bin/env bun
+#!/usr/bin/env node
 import { Command } from 'commander';
 import chalk from 'chalk';
 
 const program = new Command();
 
 program
-  .version('1.0.0')
+  .version('1.0.0', '-V, --version', 'output the current version')
   .name('git-ai-commit')
   .description('AI-powered commit message generator');
 
