@@ -6,8 +6,8 @@ const program = new Command();
 
 program
   .name('git-ai-commit')
-  .version('1.0.0')
-  .description('AI commit generator');
+  .description('AI-powered commit message generator')
+  .version('1.0.0');
 
 program
   .command('hello')
