@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Step 04: Unified Command Chain
+// Final sync for Step 04
 import { Command } from 'commander';
 import chalk from 'chalk';
 
