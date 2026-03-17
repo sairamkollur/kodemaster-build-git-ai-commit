@@ -7,7 +7,9 @@ const program = new Command();
 program
   .name('git-ai-commit')
   .description('AI-powered commit message generator')
-  .version('1.0.0') // This is what the test is failing on!
+  .version('1.0.0'); // The server runs --version and expects this!
+
+program
   .command('hello')
   .description('Test command')
   .action(() => {
