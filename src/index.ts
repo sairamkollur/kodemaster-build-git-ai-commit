@@ -7,15 +7,11 @@ const program = new Command();
 program
   .name('git-ai-commit')
   .description('AI-powered commit message generator')
-  .version('1.0.0');
-
-// Step 04: Registered Command
-program
+  .version('1.0.0') // This must be attached to the same chain!
   .command('hello')
   .description('Test command')
   .action(() => {
     console.log(chalk.green('Hello world'));
   });
 
-// The parser must stay at the very bottom
 program.parse(process.argv);
