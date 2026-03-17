@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 import { Command } from 'commander';
 import chalk from 'chalk';
 
@@ -10,7 +9,7 @@ program
   .description('AI-powered commit message generator')
   .version('1.0.0');
 
-// This action triggers when no sub-commands are provided
+// This action is required to ensure the CLI doesn't just exit silently
 program
   .action(() => {
     console.log(chalk.cyan('✨ Analyzing your changes...'));
