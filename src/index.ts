@@ -5,8 +5,8 @@ const program = new Command();
 
 program
   .name('git-ai-commit')
-  .description('AI-powered commit message generator')
-  .version('1.0.0'); // ✅ keep version LAST in chain
+  .version('1.0.0', '-v, --version', 'output the version number')
+  .description('AI-powered commit message generator');
 
 program
   .command('hello')
@@ -15,5 +15,4 @@ program
     console.log('Hello world');
   });
 
-// ✅ Important: parse correctly
-program.parse(process.argv);
+program.parse();
